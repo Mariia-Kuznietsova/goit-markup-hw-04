@@ -20,3 +20,13 @@
   color: #fff;
   margin-bottom: 16px;
 }
+
+/* Socials footer*/
+.socials-footer {
+  align-items: flex-start;
+  gap: 16px;
+}
+.socials-footer .socials-link:hover,
+.socials-footer .socials-link:focus {
+  background-color: #31d0aa;
+}

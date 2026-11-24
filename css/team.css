@@ -36,3 +36,8 @@
   margin-bottom: 8px;
   text-align: center;
 }
+
+.socials-team {
+  align-items: center;
+  gap: 24px;
+}
