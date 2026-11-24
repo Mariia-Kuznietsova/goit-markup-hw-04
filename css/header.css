@@ -2,8 +2,6 @@
   padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
-/* Maybe we need to delete padding: 24px 0; as size will depend on Navigation links size */
-
 .header .container {
   display: flex;
   align-items: center;
@@ -18,16 +16,32 @@
 .main-nav-item {
 }
 .main-nav-link {
+  position: relative;
   display: block;
   padding: 24px 0;
   font-weight: 500;
   color: #2e2f42;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .main-nav-link:hover,
-.main-nav-link:focus {
+.main-nav-link:focus,
+.main-nav-link.current {
   color: #404bbf;
 }
+.main-nav-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
 
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #404bbf;
+}
 .contacts {
   margin-left: auto;
 }
@@ -39,6 +53,8 @@
 .contacts-item {
 }
 .contacts-link {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .contacts-link:hover,
 .contacts-link:focus {

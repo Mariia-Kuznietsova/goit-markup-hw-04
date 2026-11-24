@@ -2,9 +2,21 @@
   padding: 100px 0px;
   background-color: #2e2f42;
 }
+.footer-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
 .footer-left-part {
+  margin-right: 120px;
 }
 .footer-slogan {
   max-width: 264px;
   color: #f4f4fd;
+}
+.footer-social-media {
+}
+.footer-caption {
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
 }
